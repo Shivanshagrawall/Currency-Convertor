@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    /* background-color: #1d4444; */
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+}
+.container{
+    height: fit-content;
+    width: 500px;
+    /* border: 2px solid red; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    border-radius: 20px;
+}
+.header{
+    height: min-content;
+    width: 100%;
+    /* border: 2px solid red; */
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+    padding: 15px;
+    word-spacing: 5px;
+}
+.main{
+    height: fit-content;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.fromCurrency,.toCurrency{
+    /* border: 2px solid red; */
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputBox,.selectBox{
+    height: 35px;
+    border: 1px solid grey;
+    outline: none;
+    font-size: 18px;
+    padding-inline: 10px;
+}
+.inputBox{
+    width: 50%;
+    border-right: none;
+    letter-spacing: 1px;
+    border-radius:5px 0px  0px 5px ;
+    background-color: white;
+}
+.selectBox{
+    width: 30%;
+    border-left: none;
+    border-radius:0px 5px  5px 0px ;
+}
+.arrow{
+    font-size: 36px;
+    font-weight: 900;
+}
+span{
+    font-size: 28px;
+}
+.result{
+    height: fit-content;
+    width: 100%;
+    /* border: 2px solid red; */
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+@media screen and (max-width:450px){
+    .fromCurrency,.toCurrency{
+        flex-direction: column;
+    }
+    .inputBox{
+        border-right: 1px solid grey;
+        width: 100%;
+    }
+    .selectBox{
+        border-left: 1px solid grey;
+        width: 50%;
+        text-align: center;
+    }
+}
